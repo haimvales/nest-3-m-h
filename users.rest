@@ -1,0 +1,68 @@
+#@ge-us
+GET  http://localhost:3000/users HTTP/1.1
+
+Content-Type: application/json
+{
+    "username":"rest",
+    "password_hash":"1020304050"
+}
+
+###
+
+#@po-us
+POST   http://localhost:3000/users HTTP/1.1
+
+Content-Type: application/json
+{
+    "username":"rest",
+    "password_hash":"1020304050"
+}
+
+###
+
+#@pu-us
+PUT    http://localhost:3000/users HTTP/1.1
+
+Content-Type: application/json
+{
+    "username":"rest",
+    "password_hash":"1020304050"
+}
+
+###
+
+#@de-us
+DELETE    http://localhost:3000/users HTTP/1.1
+
+Content-Type: application/json
+{
+    "username":"rest",
+    "password_hash":"1020304050"
+}
+
+
+###
+
+#@de-us
+GET    http://localhost:3000/users/singin HTTP/1.1
+
+Content-Type: application/json
+{
+    "username":"rest",
+    "password_hash":"1020304050"
+}
+
+
+###
+
+#@de-us
+POST     http://localhost:3000/users/singin HTTP/1.1
+
+Content-Type: application/json
+
+{
+    "name":"haim",
+    "password":1234
+}
+
+
