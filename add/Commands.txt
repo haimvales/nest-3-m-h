@@ -1,0 +1,19 @@
+#npm i -g @nestjs/cli
+#
+#nest new ${?} . //Example: my-app
+#
+#cd ${?}
+#
+#npm run start:dev
+#
+#nest generate module hello
+#
+#nest generate controller hello
+#
+# nest g service usersDB
+#
+# nest g controller users
+
+auth, users, shifts, assignments
+
+interface

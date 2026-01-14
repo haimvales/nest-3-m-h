@@ -1,0 +1,91 @@
+### LOGIN FIRST
+POST http://localhost:3000/api/auth/login/first
+Content-Type: application/json
+
+{
+  "id": 11,
+  "idPassword": "243"
+}
+
+###
+
+### LOGIN
+POST http://localhost:3000/api/auth/login
+Content-Type: application/json
+
+{
+  "id": 2
+}
+
+###
+
+### profile
+GET http://localhost:3000/api/auth/profile
+Content-Type: application/json
+authorization:"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MiwibmFtZSI6ImhhaW0iLCJyb2xlIjoiU29sZGllciIsImlhdCI6MTc2ODQwNjU4MX0.v0RdUIIbobIhoQR6IKm129HT7_WJa7GOOXPRGMDvfx4"
+
+{
+  "id": 2
+}
+
+###
+
+### REGISTER
+POST http://localhost:3000/api/auth/register
+Content-Type: application/json
+
+{
+  "name": "haim",
+  "password": "1234",
+  "idPassword": "243"
+}
+
+###
+
+### GET CURRENT USER
+GET http://localhost:3000/api/users/me
+
+###
+
+GET http://localhost:3000/api/users/all
+
+###
+
+GET http://localhost:3000/api/users/2
+
+###
+
+### GET ALL SHIFTS
+GET http://localhost:3000/api/shifts
+
+###
+
+### CREATE SHIFT
+POST http://localhost:3000/api/shifts
+Content-Type: application/json
+
+{
+  "location": "מגדל שמירה",
+  "startTime": "16:00",
+  "endTime": "20:00"
+}
+
+###
+
+### GET ALL SHIFTS (AFTER CREATE)
+GET http://localhost:3000/api/shifts
+
+###
+
+### GET ASSIGNMENTS
+GET http://localhost:3000/api/assignments
+
+
+###
+
+GET http://localhost:3000/api/auth/ping
+
+###
+
+GET http://localhost:3000/api
+
